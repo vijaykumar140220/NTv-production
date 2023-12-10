@@ -30,6 +30,7 @@ nav {
   background-color: rgb(155, 14, 14);
   padding: 1rem 1.5rem;
   border-radius: 0.4rem;
+
 }
 nav ul {
   list-style: none;
@@ -43,6 +44,7 @@ nav ul li:hover{
 nav a {
   text-decoration: none;
   color: white;
+  font-size: 1.2em;
 }
 nav img{
     width: 6%;
@@ -101,8 +103,8 @@ nav label {
     text-transform: capitalize;
 }
 .team img{
-    width: 400px;
-    height: 350px;
+    width: 70%;
+    height: 70%;
 }
 
 /* <about> */
@@ -113,7 +115,7 @@ nav label {
     padding: 30px 0;
   }
   .About img{
-    width: 40%;
+    width: 50%;
     height: 50vh;
     background-color: #eb0d0d;
   }
@@ -170,97 +172,97 @@ nav label {
     color: white;
   }
   
-  .Services-one{
+  .one{
     width: 100%;
     text-align: center;
     color: white;
   }
   
-  .Services-one img{
+  .one img{
     width: 40%;
     height: 40vh; 
     margin: 20px 0;
   }
   
-  .Services-one h2{
+  .one h2{
     margin: 20px auto;
     font-family: 'Playfair Display', serif;
     text-decoration: underline;
   }
   
-  .Services-two{
+  .two{
     width: 100%;
     text-align: center;
     color: white;
   }
   
-  .Services-two img{
+  .two img{
     width: 40%;
     height: 40vh; 
     margin: 20px 0;
   }
   
-  .Services-two h2{
+  .two h2{
     margin: 20px auto;
     font-family: 'Playfair Display', serif;
     text-decoration: underline;
   }
   
-  .Services-three{
+  .three{
     width: 100%;
     text-align: center;
     color: white;
     margin: 20px auto;
   }
   
-  .Services-three img{
+  .three img{
     width: 40%;
     height: 40vh;
     border: 2px solid white;
     margin: 20px auto;
   }
   
-  .Services-three h2{
+  .three h2{
     margin: 20px auto;
     font-family: 'Playfair Display', serif;
     text-decoration: underline;
   }
   
-  .Services-four{
+  .four{
     width: 100%;
     text-align: center;
     color: white;
     margin: 20px auto;
   }
   
-  .Services-four img{
+  .four img{
     width: 40%;
     height: 40vh; 
     border: 2px solid white;
     margin: 20px auto;
   }
   
-  .Services-four h2{
+  .four h2{
     margin: 20px auto;
     font-family: 'Playfair Display', serif;
     text-decoration: underline;
   }
   
-  .Services-five{
+  .five{
     width: 100%;
     text-align: center;
     color: white;
     margin: 20px auto;
   }
   
-  .Services-five img{
+  .five img{
     width: 40%;
     height: 40vh; 
     border: 2px solid white;
     margin: 20px auto;
   }
   
-  .Services-five h2{
+  .five h2{
     margin: 20px auto;
     font-family: 'Playfair Display', serif;
     text-decoration: underline;
@@ -291,6 +293,7 @@ nav label {
   .Testmodel p{
     font-size: 1rem;
     margin: 30px 40px;
+    text-align: center;
   }
   .Testmodel h2{
     font-size: 2rem;
@@ -315,7 +318,7 @@ nav label {
     padding: 20px 0;
   }
   .Contact iframe{
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 20px 0;
     width:500px; 
     height:300px; 
@@ -332,6 +335,13 @@ nav label {
     padding: 20px 0;
     font-size: 2rem;
   }
+  .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .Contact i{
     font-size: 1.5rem;
     margin: 0 10px ;
@@ -351,6 +361,11 @@ nav label {
 
 
 @media (max-width: 40.625em) {
+nav{
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
     nav .menu {
       width: 100%;
       height: 0;
@@ -361,8 +376,10 @@ nav label {
       align-items: center;
     }
     nav img{
-      width: 60px;
-      height: 50px;
+      position: absolute;
+height: 80px;
+width: 90px;
+left: 5px;
     }
     nav label {
       display: inline-flex;
@@ -372,38 +389,37 @@ nav label {
     nav #toggle:checked ~ .menu {
       height: 100%;
     }
+
+    .production p{
+      margin: 15px 10px;
+      text-align: justify;
+    }
+    .About p{
+      text-align: justify;
+      margin: 0px 5px;
+    }
     .About img{
-        width: 60%;
-        height: 60vh;
+        width: 70%;
+        height: 40vh;
         background-color: #eb0d0d;
         margin: 20px 0;
       }
       .Services img{
-        width: 60%;
+        width: 80%;
       }
-      .Services-one img{
-        width: 60%;
-      }
-      .Services-two img{
-        width: 60%;
-      }
-      .Services-three img{
-        width: 60%;
-        border: none;
-      }
-      .Services-four img{
-        width: 60%;
-      }
-      .Services-five img{
-        width: 60%;
-      }
-      .Services-five img{
-        width: 60%;
+      .Testmodel{
+        width:90%;
       }
       .Testmodel h1{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin: 20px auto;
         font-family: 'Playfair Display', serif;
+      }
+      .Testmodel h2{
+      font-size: 1.5rem;
+      }
+      .Testmodel p{
+        margin:10px 10px ;
       }
       .Contact iframe{
         width:300px; 
